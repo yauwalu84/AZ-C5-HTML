@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title for the webpage -->
+    <title>Forms Assignment</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/x-icon" href="/images/faviconaa_1.png">
+
+    <!-- Metadata for documentation -->
+    <meta name="description" content="This is My third assignment for the AzubiAfrica Frontend Development programe">
+    <meta name="keywords" content="Frontend Development, AzubiAfrica">
+    <meta name="author" content="Yahaya Auwalu">
+</head>
+<body>
+    <header>
+        <h1>User Information Form</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post" onsubmit="return validateForm()">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <!-- Form Basics input -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <br>
+                <br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" required>
+
+                <br>
+                <br>
+                <!-- More Input Types -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{12}" required>
+
+                <br>
+                <br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <br>
+                <br>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="SC">Slect Country</option>
+                    <option value="gh">Ghana</option>
+                    <option value="ng">Nigeria</option>
+                    <option value="ky">Kenya</option>
+                </select>
+            </fieldset>
+
+            <!-- Radio Buttons  -->
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" required >
+
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+            </fieldset>
+
+           <!-- Checkboxes -->
+            <fieldset>
+                <legend>Interests</legend>
+                <label> Hobbies:</label>
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label>
+
+                <input type="checkbox" id="sports" name="hobbies" value="sports">
+                <label for="sports">Sports</label>
+
+                <input type="checkbox" id="music" name="hobbies" value="music">
+                <label for="music">Music</label>
+
+                <input type="checkbox" id="travel" name="hobbies" value="travel">
+                <label for="travel">Travel</label>
+            </fieldset>
+
+            <br>
+            <br>
+            <!--Text Area -->
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+            <br>
+            <br>
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 infocube. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
